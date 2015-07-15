@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo 5</title>
+    <link rel="stylesheet" href="./css/demo.css">
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="run-box">
+        <button id="run">RUN CODE</button>
+        <br/><br/>
+    </div>
+
+<div id="editor">var re = /o/y; //相当于/^o/y
+console.log("lastIndex : ",re.lastIndex," result : ",re.exec("foo"));
+re.lastIndex = 1; //手动跳过了第一个字符f,^现在匹配的位置就是f和o之间的位置,所以^o能匹配.
+console.log("lastIndex : ",re.lastIndex," result : ",re.exec("foo"));
+console.log("lastIndex : ",re.lastIndex," result : ",re.exec("foo"));
+console.log("lastIndex : ",re.lastIndex," result : ",re.exec("foo"));
+console.log("lastIndex : ",re.lastIndex," result : ",re.exec("foo"));
+console.log("lastIndex : ",re.lastIndex," result : ",re.exec("foo")); </div>
+
+</div>
+<script src="./js/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/demo.js"></script>
+</body>
+</html>
